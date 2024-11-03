@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/booking_style.css">
+    <title>Tickets Booking</title>
+</head>
+<body>
+    
+    <h2>Booking System</h2>
+
+
+    <!-- empty container to hold Tables 
+    Tables Cards will be generated (populated) by javascript code-->
+    <div class="container mt-3 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="tables"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODAL | Start -->
+        <!-- <div id="myModal" class="modal"> -->
+            <!-- Modal content -->
+            <!-- <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            </div>
+        </div> -->
+    <!-- MODAL | end -->
+
+    <div class="modal fade" id="modalId">
+        <div class="modal-dialog bg-success">
+            <div class="modal-content" style="transform: scaleX(1.4);">
+                <div class="modal-header pb-2">
+                    <h1 class="font-weight-light ml-4">Description</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&time;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 p-3">
+                        <div class="col-md-6">
+                            <img src="" width="100%" height="280px" class="rounded">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h2 class="product_name"></h2>
+                            <p style="box-sizing: border-box;" class="product_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, doloribus.</p>
+                            <p>Review: &nbsp;&nbsp;&nbsp;
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </p>
+                            <h4 class="product_price"></h4>
+                            <button class="btn btn-success mt-2" style="width: 150px;"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
